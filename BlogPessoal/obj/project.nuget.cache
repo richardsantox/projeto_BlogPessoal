@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aprAjEkIXiqMSo5CQv4sGJeu8K8vz5fspUQ3GZDMH/UbpLvfdxE9xFRHYwyz3MYuc5nJfd2QPoNeUg5pBxCDVQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Pichau\\Desktop\\Atividades Generation\\C#\\Exercicios\\VS\\BlogPessoal\\BlogPessoal\\BlogPessoal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pichau\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
