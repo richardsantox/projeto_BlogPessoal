@@ -97,3 +97,4 @@ C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogP
 C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoalTeste\obj\Debug\net5.0\BlogPessoalTeste.pdb
 C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoalTeste\obj\Debug\net5.0\BlogPessoalTeste.genruntimeconfig.cache
 C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoalTeste\obj\Debug\net5.0\ref\BlogPessoalTeste.dll
+C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoalTeste\bin\Debug\net5.0\CoverletSourceRootsMapping
