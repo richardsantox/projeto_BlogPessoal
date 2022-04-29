@@ -22,6 +22,7 @@ namespace BlogPessoalTeste.Teste.data
             _contexto = new BlogPessoalContexto(opt);
         }
 
+
         [TestMethod]
         public void InserirNovoUsuarioNoBancoRetornaUsuario()
         {
@@ -32,12 +33,12 @@ namespace BlogPessoalTeste.Teste.data
             usuario.Senha = "123456";
             usuario.Foto = "Aki é o link da foto";
 
-            _contexto.Usuario.Add(usuario);
+            _contexto.Usuarios.Add(usuario);
 
             _contexto.SaveChanges();
 
 
-            Assert.IsNotNull(_contexto.Usuario.FirstOrDefault(u => u.Email == "richard@email.com"));
+            Assert.IsNotNull(_contexto.Usuarios.FirstOrDefault(u => u.Email == "richard@email.com"));
         }
     }
 }

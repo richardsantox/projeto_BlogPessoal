@@ -28,11 +28,9 @@ namespace BlogPessoal
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-
-            //services.AddDbContext<BlogPessoalContexto>
-            //(opt => opt.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDbContext<BlogPessoalContexto>();
+            // Configuração de Contexto
+            var connectionString = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<BlogPessoalContexto>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
             services.AddControllers();
         }

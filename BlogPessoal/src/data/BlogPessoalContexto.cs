@@ -6,22 +6,14 @@ namespace BlogPessoal.src.data
 {
     public class BlogPessoalContexto : DbContext
     {
-        protected readonly IConfiguration _configuration;
 
-        public DbSet<UsuarioModelo> Usuario { get; set; }
-        public DbSet<TemaModelo> Tema { get; set; }
+        public DbSet<UsuarioModelo> Usuarios { get; set; }
+        public DbSet<TemaModelo> Temas { get; set; }
         public DbSet<PostagemModelo> Postagens { get; set; }
 
-        public BlogPessoalContexto(IConfiguration configuration)
+        public BlogPessoalContexto(DbContextOptions<BlogPessoalContexto> opt) : base(opt)
         {
-            _configuration = configuration;
-        }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            var connectionString = _configuration.GetConnectionString("DefaultConnection");
-            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
-
     }
 }
