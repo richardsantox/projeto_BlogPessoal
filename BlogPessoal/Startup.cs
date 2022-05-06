@@ -10,9 +10,8 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
-
-
+using BlogPessoal.src.repositorios.implementacoes;
+using BlogPessoal.src.repositorios;
 
 namespace BlogPessoal
 {
@@ -32,7 +31,15 @@ namespace BlogPessoal
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<BlogPessoalContexto>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
+            //Repositorios
+            services.AddScoped<IUsuario, UsuarioRepositorio>();
+            services.AddScoped<ITema, TemaRepositorio>();
+            services.AddScoped<IPostagem, PostagemRepositorio>();
+
+            // Controles 
             services.AddControllers();
+
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -28,7 +28,6 @@ namespace BlogPessoal.src.dtos
             Senha = senha;
             Foto = foto;
         }
-
     }
 
     /// <summary>
@@ -39,6 +38,9 @@ namespace BlogPessoal.src.dtos
     /// </summary>
     public class AtualizarUsuarioDTO
     {
+        [Required]
+        public int Id { get; set; }
+
         [Required, StringLength(50)]
         public string Nome { get; set; }
 
@@ -47,8 +49,9 @@ namespace BlogPessoal.src.dtos
 
         public string Foto { get; set; }
 
-        public AtualizarUsuarioDTO(string nome, string senha, string foto)
+        public AtualizarUsuarioDTO(int id, string nome, string senha, string foto)
         {
+            Id = id;
             Nome = nome;
             Senha = senha;
             Foto = foto;
