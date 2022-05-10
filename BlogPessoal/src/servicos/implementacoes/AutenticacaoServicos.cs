@@ -77,13 +77,13 @@ namespace BlogPessoal.src.servicos.implementacoes
         }
 
 
-        public AutorizacaoDTO PegarAutorizacao(AutenticarDTO autenticacao)
+        public AutorizacaoDTO PegarAutorizacao(AutenticarDTO dto)
         {
-            var usuario = _repositorio.PegarUsuarioPeloEmail(autenticacao.Email);
+            var usuario = _repositorio.PegarUsuarioPeloEmail(dto.Email);
 
             if (usuario == null) throw new Exception("Usuário não encontrado");
 
-            if (usuario.Senha != CodificarSenha(autenticacao.Senha)) throw new
+            if (usuario.Senha != CodificarSenha(dto.Senha)) throw new
             Exception("Senha incorreta");
 
             return new AutorizacaoDTO(usuario.Id, usuario.Email, usuario.Tipo,

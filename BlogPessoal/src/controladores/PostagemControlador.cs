@@ -53,7 +53,7 @@ namespace BlogPessoal.src.controladores
         }
 
 
-        [HttpGet]
+        [HttpGet("pesquisa")]
         [Authorize]
         public IActionResult PegarPostagensPorPesquisa
         (

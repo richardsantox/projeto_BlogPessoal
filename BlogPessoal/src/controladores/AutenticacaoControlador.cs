@@ -6,6 +6,9 @@ using System;
 
 namespace BlogPessoal.src.controladores
 {
+    [ApiController]
+    [Route("api/Autenticacao")]
+    [Produces("application/json")]
     public class AutenticacaoControlador : ControllerBase
     {
         #region Atributos

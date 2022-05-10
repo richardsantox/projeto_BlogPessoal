@@ -6,9 +6,9 @@ namespace BlogPessoal.src.servicos
     public interface IAutenticacao
     {
         string CodificarSenha(string senha);
-        void CriarUsuarioSemDuplicar(NovoUsuarioDTO usuario);
+        void CriarUsuarioSemDuplicar(NovoUsuarioDTO dto);
         string GerarToken(UsuarioModelo usuario);
-        AutorizacaoDTO PegarAutorizacao(AutenticarDTO autenticacao);
+        AutorizacaoDTO PegarAutorizacao(AutenticarDTO dto);
     }
 
 }
