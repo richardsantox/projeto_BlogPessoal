@@ -35,7 +35,7 @@ namespace BlogPessoal.src.dtos
 
         public AtualizarTemaDTO(int id, string descricao)
         {
-            Id = Id;
+            Id = id;
             Descricao = descricao;   
         }
     }
