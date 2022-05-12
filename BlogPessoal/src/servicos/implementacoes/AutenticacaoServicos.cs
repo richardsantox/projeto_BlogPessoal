@@ -7,6 +7,7 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BlogPessoal.src.servicos.implementacoes
 {
@@ -42,15 +43,15 @@ namespace BlogPessoal.src.servicos.implementacoes
         }
 
 
-        public void CriarUsuarioSemDuplicar(NovoUsuarioDTO dto)
+        public async Task CriarUsuarioSemDuplicarAsync(NovoUsuarioDTO dto)
         {
-            var usuario = _repositorio.PegarUsuarioPeloEmail(dto.Email);
+            var usuario = await _repositorio.PegarUsuarioPeloEmailAsync(dto.Email);
 
             if (usuario != null) throw new Exception("Este email já está sendo utilizado");
 
             dto.Senha = CodificarSenha(dto.Senha);
 
-            _repositorio.NovoUsuario(dto);
+            await _repositorio.NovoUsuarioAsync(dto);
         }
 
 
@@ -77,9 +78,9 @@ namespace BlogPessoal.src.servicos.implementacoes
         }
 
 
-        public AutorizacaoDTO PegarAutorizacao(AutenticarDTO dto)
+        public async Task<AutorizacaoDTO> PegarAutorizacaoAsync(AutenticarDTO dto)
         {
-            var usuario = _repositorio.PegarUsuarioPeloEmail(dto.Email);
+            var usuario = await _repositorio.PegarUsuarioPeloEmailAsync(dto.Email);
 
             if (usuario == null) throw new Exception("Usuário não encontrado");
 
