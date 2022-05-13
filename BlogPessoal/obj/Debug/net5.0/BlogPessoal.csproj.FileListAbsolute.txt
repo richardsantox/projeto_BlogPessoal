@@ -64,3 +64,10 @@ C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogP
 C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\bin\Debug\net5.0\ZstdNet.dll
 C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\bin\Debug\net5.0\MySql.EntityFrameworkCore.dll
 C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\obj\Debug\net5.0\BlogPessoal.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\bin\Debug\net5.0\BlogPessoal.xml
+C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Pichau\Desktop\Atividades Generation\C#\Exercicios\VS\BlogPessoal\BlogPessoal\obj\Debug\net5.0\BlogPessoal.xml
