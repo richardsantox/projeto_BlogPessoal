@@ -37,9 +37,18 @@ namespace BlogPessoal
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Configuração de Contexto e Banco de Dados
-            var connectionString = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<BlogPessoalContexto>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            // Configuração de Banco de Dados
+            if (Configuration["Enviroment:Start"] == "PROD")
+            {
+                services.AddEntityFrameworkNpgsql()
+                    .AddDbContext<BlogPessoalContexto>(opt =>
+                    opt.UseNpgsql(Configuration["ConnectionStringsProd:DefaultConnection"]));
+            }
+            else
+            {
+                var connectionString = Configuration.GetConnectionString("DefaultConnection");
+                services.AddDbContext<BlogPessoalContexto>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            }
 
             // Repositorios
             services.AddScoped<IUsuario, UsuarioRepositorio>();
@@ -120,8 +129,20 @@ namespace BlogPessoal
                 contexto.Database.EnsureCreated();
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BlogPessoal v1"));
+                app.UseSwaggerUI(c => {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "BlogPessoal v1");
+                    c.RoutePrefix = string.Empty;
+                });
             }
+
+            // Ambiente de produção
+            contexto.Database.EnsureCreated();
+            app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "BlogPessoal v1");
+                c.RoutePrefix = string.Empty;
+            });
 
             //Ambiente de produção 
             //Rotas

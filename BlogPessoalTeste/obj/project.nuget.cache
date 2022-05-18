@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XHUrI5AAZ1JNju+M5E1/cuM+ic9vS+13+OkPI2ciyMsmm1C8fN+4tB8agEVF80TV+dA6ETSVlk/psr3EDqbwiw==",
+  "dgSpecHash": "aN0EiS/DcnNcuf5kd+WaZGniTkEvLiNGLJpIDdh/hqEbNtTbrovRKvcg2qzo9xSbHpJ5ioUAigEBffrgIHC0XQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pichau\\Desktop\\Atividades Generation\\C#\\Exercicios\\VS\\BlogPessoal\\BlogPessoalTeste\\BlogPessoalTeste.csproj",
   "expectedPackageFiles": [
@@ -71,6 +71,8 @@
     "C:\\Users\\Pichau\\.nuget\\packages\\mysqlconnector\\1.3.7\\mysqlconnector.1.3.7.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\npgsql\\5.0.1.1\\npgsql.5.0.1.1.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.1\\npgsql.entityframeworkcore.postgresql.5.0.1.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.0\\pomelo.entityframeworkcore.mysql.5.0.0.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
